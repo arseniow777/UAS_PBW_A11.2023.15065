@@ -7,7 +7,7 @@ include "./public/koneksi.php";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arsen Article</title>
+    <title>Arsen Articles</title>
     <link rel="icon" href="./assets/logoaja.png" />
 
     <!--bootstrap-->
@@ -57,7 +57,7 @@ include "./public/koneksi.php";
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#article">Article</a>
+              <a class="nav-link" href="#article">Articles</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gallery">Gallery</a>
