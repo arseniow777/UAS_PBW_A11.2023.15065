@@ -1,0 +1,300 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-align {
+  position: relative;
+  left: 200px;
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 767.98px) {
+  .custom-align {
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .hero {
+    padding-top: 70px;
+  }
+  .hero img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 40px;
+  }
+  .section.about img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0px !important;
+  }
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../assets/background_hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.custom-gallery-size {
+  max-height: 600px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.preview-thumbnails img {
+  cursor: pointer;
+}
+
+.preview-thumbnails img:hover {
+  opacity: 0.7;
+}
+.custom-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 5rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+footer {
+  background-color: #f8f9fa;
+}
+
+footer .d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+footer .ml-2 {
+  margin-left: 10px;
+}
+
+footer .border-top {
+  border-top: 1px solid #dee2e6;
+}
+.card {
+  height: 100%;
+}
+.card-img-top {
+  height: 210px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.card-body p {
+  text-align: justify;
+}
+body.dark-mode {
+  background-color: #292929;
+  color: #ffffff;
+}
+
+.navbar.dark-mode {
+  background-color: #333333;
+}
+
+.navbar-dark {
+  background-color: #333333 !important;
+}
+.navbar-dark a {
+  color: #ffffff;
+}
+.navbar-dark svg {
+  color: #333333;
+}
+
+.bg-dark {
+  background-color: #333333 !important;
+}
+
+.text-light {
+  color: #ffffff !important;
+}
+
+.footer.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dropdown-item.dark-mode {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.dropdown-item.dark-mode:hover {
+  background-color: #555555;
+}
+
+.card-body.dark-mode {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.card-body.dark-mode p,
+.card-body.dark-mode h3,
+.card-body.dark-mode h2 {
+  color: #ffffff;
+}
+
+/*css modal*/
+.modal-body {
+  text-align: justify; /* Menambahkan agar teks rata kiri-kanan */
+  padding: 20px; /* Menambah sedikit padding agar teks tidak terlalu rapat */
+}
+
+.modal-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Dark Mode Styles for Modal */
+body.dark-mode .modal-content {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .modal-header {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-mode .modal-footer {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-mode .btn-close {
+  color: white;
+}
+
+body.dark-mode .modal-body {
+  background-color: #222;
+}
+
+/* Optional: Darken backdrop when in dark mode */
+body.dark-mode .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: scale(1.05); /* Membesarkan ukuran card sedikit */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Dark mode hover effect */
+body.dark-mode .card:hover {
+  transform: scale(1.05); /* Sama untuk dark mode */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Optional: Custom styles for card body in dark mode */
+body.dark-mode .card-body {
+  background-color: #333; /* Latar belakang card gelap */
+  color: white; /* Teks warna putih */
+}
+
+/*css about*/
+.section.about {
+  background-color: #f8f9fa; /* Latar belakang terang */
+  padding: 60px 0;
+}
+
+.section.about h2 {
+  font-family: "Audiowide", sans-serif;
+  color: #5f95b7;
+}
+
+.section.about ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.section.about img {
+  padding: 15px;
+  border: none !important;
+}
+
+/*darkmode about*/
+/* Default light mode styles */
+.section.about {
+  background-color: #f8f9fa; /* Background terang */
+  color: #333333; /* Teks gelap */
+}
+
+.section.about h2 {
+  color: #5f95b7; /* Warna heading */
+}
+
+.section.about img {
+  outline: none; /* Menghilangkan outline untuk gambar di About */
+  margin-left: 100px;
+}
+
+/* Dark mode styles */
+body.dark-mode .section.about {
+  background-color: #292929; /* Background gelap */
+  color: #ffffff; /* Teks terang */
+}
+
+body.dark-mode .section.about h2 {
+  color: #add8e6; /* Warna heading lebih soft di dark mode */
+}
+
+body.dark-mode .section.about img {
+  border: 5px solid #ffffff; /* Border putih untuk dark mode */
+}
+/* Default light mode styles (tidak perlu diubah jika sudah benar) */
+.section.about ul li {
+  color: #333; /* Warna teks default (gelap) */
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Dark mode styles untuk ul dan li */
+body.dark-mode .section.about ul,
+body.dark-mode .section.about ul li {
+  color: #ffffff; /* Ubah warna teks menjadi putih */
+}
