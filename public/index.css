@@ -178,8 +178,8 @@ body.dark-mode {
 
 /*css modal*/
 .modal-body {
-  text-align: justify; /* Menambahkan agar teks rata kiri-kanan */
-  padding: 20px; /* Menambah sedikit padding agar teks tidak terlalu rapat */
+  text-align: justify;
+  padding: 20px;
 }
 
 .modal-content {
@@ -187,7 +187,7 @@ body.dark-mode {
   margin: auto;
 }
 
-/* Dark Mode Styles for Modal */
+/* Dark Mode Modal */
 body.dark-mode .modal-content {
   background-color: #333;
   color: white;
@@ -211,32 +211,30 @@ body.dark-mode .modal-body {
   background-color: #222;
 }
 
-/* Optional: Darken backdrop when in dark mode */
 body.dark-mode .modal-backdrop {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Hover effect for cards */
+/* Hover card */
 .card:hover {
-  transform: scale(1.05); /* Membesarkan ukuran card sedikit */
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
-}
-
-/* Dark mode hover effect */
-body.dark-mode .card:hover {
-  transform: scale(1.05); /* Sama untuk dark mode */
+  transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
 
-/* Optional: Custom styles for card body in dark mode */
+/* Dark mode hover */
+body.dark-mode .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 body.dark-mode .card-body {
-  background-color: #333; /* Latar belakang card gelap */
-  color: white; /* Teks warna putih */
+  background-color: #333;
+  color: white;
 }
 
 /*css about*/
 .section.about {
-  background-color: #f8f9fa; /* Latar belakang terang */
+  background-color: #f8f9fa;
   padding: 60px 0;
 }
 
@@ -257,44 +255,42 @@ body.dark-mode .card-body {
 }
 
 /*darkmode about*/
-/* Default light mode styles */
 .section.about {
-  background-color: #f8f9fa; /* Background terang */
-  color: #333333; /* Teks gelap */
+  background-color: #f8f9fa;
+  color: #333333;
 }
 
 .section.about h2 {
-  color: #5f95b7; /* Warna heading */
+  color: #5f95b7;
 }
 
 .section.about img {
-  outline: none; /* Menghilangkan outline untuk gambar di About */
+  outline: none;
   margin-left: 100px;
 }
 
-/* Dark mode styles */
 body.dark-mode .section.about {
-  background-color: #292929; /* Background gelap */
-  color: #ffffff; /* Teks terang */
+  background-color: #292929;
+  color: #ffffff;
 }
 
 body.dark-mode .section.about h2 {
-  color: #add8e6; /* Warna heading lebih soft di dark mode */
+  color: #add8e6;
 }
 
 body.dark-mode .section.about img {
-  border: 5px solid #ffffff; /* Border putih untuk dark mode */
+  border: 5px solid #ffffff;
 }
-/* Default light mode styles (tidak perlu diubah jika sudah benar) */
+
 .section.about ul li {
-  color: #333; /* Warna teks default (gelap) */
+  color: #333;
   font-size: 1.1rem;
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
-/* Dark mode styles untuk ul dan li */
+/* Dark mode ul dan li */
 body.dark-mode .section.about ul,
 body.dark-mode .section.about ul li {
-  color: #ffffff; /* Ubah warna teks menjadi putih */
+  color: #ffffff;
 }
