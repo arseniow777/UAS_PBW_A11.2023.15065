@@ -43,13 +43,13 @@ if (!isset($_SESSION['username'])) {
                 min-height: 100%;
             }
             body {
-                margin-bottom: 100px; /* Margin bottom by footer height */
+                margin-bottom: 100px;
             }
             footer {
                 position: absolute;
                 bottom: 0;
                 width: 100%;
-                height: 100px; /* Set the fixed height of the footer here */ 
+                height: 100px; 
             }
             footer .col-md-4 {
                 text-align: center; 
@@ -75,9 +75,7 @@ if (!isset($_SESSION['username'])) {
                 background-color: #5f95b7;
             }
 
-           /* CSS untuk Dark Mode yang diperbarui */
-
-            /* Default Light Mode */
+            /* Light Mode */
             body {
                 background-color: #f8f9fa; 
                 color: #212529;
@@ -90,7 +88,7 @@ if (!isset($_SESSION['username'])) {
             }
 
             a {
-                color: #5f95b7 !important; /* Tetap biru */
+                color: #5f95b7 !important; 
             }
 
             /* DARK MODE */
@@ -105,7 +103,7 @@ if (!isset($_SESSION['username'])) {
             }
 
             .navbar .nav-link, .navbar .dropdown-item {
-                color: #5f95b7 !important; /* Tetap biru saat dark mode */
+                color: #5f95b7 !important;
             }
 
             .navbar-dark .navbar-toggler-icon {
