@@ -386,68 +386,7 @@ include "./public/koneksi.php";
 
 
     <script>
-      // Tambahkan event listener untuk dark mode dengan localStorage
-document.getElementById("darkMode").addEventListener("click", function () {
-    document.body.classList.add("dark-mode");
-
-    // Navbar dan Footer
-    document.querySelector(".navbar").classList.add("navbar-dark", "bg-dark");
-    document.querySelector(".footer").classList.add("bg-dark", "text-light");
-
-    // Card bodies
-    let cards = document.querySelectorAll(".card-body");
-    cards.forEach(function (card) {
-        card.classList.add("dark-mode");
-    });
-
-    // Modal - Dark Mode
-    let modals = document.querySelectorAll(".modal-content");
-    modals.forEach(function (modal) {
-        modal.classList.add("bg-dark", "text-light");
-    });
-
-    // Section About - Dark Mode
-    let aboutSection = document.querySelector(".section.about");
-    if (aboutSection) {
-        aboutSection.classList.add("bg-dark", "text-light");
-    }
-
-    // **Simpan status dark mode ke localStorage**
-    localStorage.setItem("darkMode", "enabled");
-});
-
-document.getElementById("lightMode").addEventListener("click", function () {
-    document.body.classList.remove("dark-mode");
-
-    // Navbar dan Footer
-    document.querySelector(".navbar").classList.remove("navbar-dark", "bg-dark");
-    document.querySelector(".footer").classList.remove("bg-dark", "text-light");
-
-    // Card bodies
-    let cards = document.querySelectorAll(".card-body");
-    cards.forEach(function (card) {
-        card.classList.remove("dark-mode");
-    });
-
-    // Modal - Light Mode
-    let modals = document.querySelectorAll(".modal-content");
-    modals.forEach(function (modal) {
-        modal.classList.remove("bg-dark", "text-light");
-    });
-
-    // Section About - Light Mode
-    let aboutSection = document.querySelector(".section.about");
-    if (aboutSection) {
-        aboutSection.classList.remove("bg-dark", "text-light");
-    }
-
-    // **Simpan status light mode ke localStorage**
-    localStorage.setItem("darkMode", "disabled");
-});
-
-// **Tambahkan pengecekan saat halaman dimuat**
-window.onload = function () {
-    if (localStorage.getItem("darkMode") === "enabled") {
+    document.getElementById("darkMode").addEventListener("click", function () {
         document.body.classList.add("dark-mode");
 
         // Navbar dan Footer
@@ -460,19 +399,77 @@ window.onload = function () {
             card.classList.add("dark-mode");
         });
 
-        // Modal
+        // Modal - Dark Mode
         let modals = document.querySelectorAll(".modal-content");
         modals.forEach(function (modal) {
             modal.classList.add("bg-dark", "text-light");
         });
 
-        // Section About
+        // Section About - Dark Mode
         let aboutSection = document.querySelector(".section.about");
         if (aboutSection) {
             aboutSection.classList.add("bg-dark", "text-light");
         }
-    }
-};
+
+        localStorage.setItem("darkMode", "enabled");
+    });
+
+    document.getElementById("lightMode").addEventListener("click", function () {
+        document.body.classList.remove("dark-mode");
+
+        // Navbar dan Footer
+        document.querySelector(".navbar").classList.remove("navbar-dark", "bg-dark");
+        document.querySelector(".footer").classList.remove("bg-dark", "text-light");
+
+        // Card bodies
+        let cards = document.querySelectorAll(".card-body");
+        cards.forEach(function (card) {
+            card.classList.remove("dark-mode");
+        });
+
+        // Modal - Light Mode
+        let modals = document.querySelectorAll(".modal-content");
+        modals.forEach(function (modal) {
+            modal.classList.remove("bg-dark", "text-light");
+        });
+
+        // Section About - Light Mode
+        let aboutSection = document.querySelector(".section.about");
+        if (aboutSection) {
+            aboutSection.classList.remove("bg-dark", "text-light");
+        }
+
+        localStorage.setItem("darkMode", "disabled");
+    });
+
+
+    window.onload = function () {
+        if (localStorage.getItem("darkMode") === "enabled") {
+            document.body.classList.add("dark-mode");
+
+            // Navbar dan Footer
+            document.querySelector(".navbar").classList.add("navbar-dark", "bg-dark");
+            document.querySelector(".footer").classList.add("bg-dark", "text-light");
+
+            // Card bodies
+            let cards = document.querySelectorAll(".card-body");
+            cards.forEach(function (card) {
+                card.classList.add("dark-mode");
+            });
+
+            // Modal
+            let modals = document.querySelectorAll(".modal-content");
+            modals.forEach(function (modal) {
+                modal.classList.add("bg-dark", "text-light");
+            });
+
+            // Section About
+            let aboutSection = document.querySelector(".section.about");
+            if (aboutSection) {
+                aboutSection.classList.add("bg-dark", "text-light");
+            }
+        }
+    };
 
 
 
